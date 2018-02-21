@@ -22,3 +22,4 @@ Here's how to start using Ticket Owl:
 3. Optionally change the `schedule: rate(1 minute)` in the `serverless.yml` file to to any aws [schedule expression](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html). This will allow you to determine how frequently you want to check on the website you're interested in.
 4. Optionally change the `timeout: 6` value from 6 to a larger number if you are running many jobs 
 5. Optionally [verify an SES email](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-email-addresses-procedure.html) in AWS if you want to use the email alerts feature
+6. Deploy your service to aws with `sls deploy`

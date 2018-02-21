@@ -14,4 +14,4 @@ functions:
   scan:
     handler: index.handler
     events:
-      - schedule: rate(1 minute) # Any schedule expression - https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
+      - schedule: rate(5 minutes) # Any schedule expression - https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
