@@ -1,0 +1,17 @@
+service: ticket-owl
+
+provider:
+  name: aws
+  runtime: python3.6
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - sns:Publish
+        - ses:SendEmail
+      Resource: "*"
+
+functions:
+  scan:
+    handler: index.handler
+    events:
+      - schedule: rate(1 minute) # Any schedule expression - https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
