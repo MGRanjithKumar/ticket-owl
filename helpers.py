@@ -13,7 +13,7 @@ def contains_text(value_to_check, url):
         return True
 
 
-def doesnt_contain_text(value_to_check, url):
+def lacks_text(value_to_check, url):
     """Function to check if a page doesn't contain the given value"""
     if str(value_to_check) not in get_page_text(url):
         return True
@@ -52,7 +52,7 @@ def send_sms(cell_number, message):
 # Checker functions
 CHECKERS = {
     'contains_text': contains_text,
-    'doesnt_contain_text': doesnt_contain_text
+    'lacks_text': lacks_text
 }
 
 ALERTS = {
