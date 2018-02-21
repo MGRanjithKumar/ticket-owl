@@ -15,6 +15,15 @@ def doesnt_contain_text(value_to_check, url):
     if str(value_to_check) not in get_page_text(url):
         return True
 
+# def site_changed(url):
+#    """Checks against a previous version of the site text stored in AWS S3"""
+#    # Create custom bucket if not exists
+#       # (store bucket name in SLS config?)
+#    # Fetch bucket contents looking for hash of url as key name (somehash.txt)
+#    # If no file for url exits (know this by checking for hash)
+#       # save website text to file in s3 and create key with hash --> somehash.txt
+#    # If file exists, get it and then download and compare to current site
+
 def send_email(verified_email, subject, message):
     ses = boto3.client('ses')
     ses.send_email(
