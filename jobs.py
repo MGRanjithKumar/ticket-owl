@@ -7,7 +7,7 @@ JOBS = [
     #     'alerts': ['which type(s) of alert', 'to run'], # required
     #     'message': 'a message to send as an alert',  # required
     #     'subject': 'an email subject line',  # optional
-    #     'verified_email': 'an SMS-verfied email',  # optional
+    #     'verified_email': 'an SMS-verified email',  # optional
     #     'phone_number': 'a number with this format: +15555555555'  # optional
     # },
     #
@@ -19,7 +19,7 @@ JOBS = [
         'alerts': ['email', 'sms'],
         'message': 'The ticket for Feb 10 is now on sale! - https://www.myticketsite.com/event/123123',
         'subject': 'Ticket Owl Alert',
-        'verified_email': 'fernando@a-verfied-email.com',
+        'verified_email': 'fernando@a-verified-email.com',
         'phone_number': '+1555666777#'
     }
 ]
