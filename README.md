@@ -1,5 +1,7 @@
 # Ticket Owl
 
+*An alternate explaination of how to use this can be found on my website [here](https://www.fernandomc.com/posts/ticket-owl-tool-check-website-changes/)*
+
 Let's say you want to see when some arbitrary text appears or dissapears from a website and be notified via email or text.
 
 Maybe you need to:
