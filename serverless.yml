@@ -9,7 +9,7 @@ provider:
         - sns:Publish
         - ses:SendEmail
       Resource: "*"
-
+  timeout: 6 # Increase up to 300 (sometimes needed for larger jobs)
 functions:
   scan:
     handler: index.handler
