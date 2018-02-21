@@ -10,7 +10,7 @@ JOBS = [
     #     'verified_email': 'an SMS-verfied email',  # optional
     #     'phone_number': 'a number with this format: +15555555555'  # optional
     # },
-    # 
+    #
     # Example:
     {
         'url': 'https://www.myticketsite.com/event/123123',
@@ -23,4 +23,3 @@ JOBS = [
         'phone_number': '+1555666777#'
     }
 ]
-
